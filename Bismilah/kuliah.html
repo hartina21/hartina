@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="CSS/aos.css">
+    <title>Pendaftaran_Kuliah 2021/2022</title>
+</head>
+<body>
+    <!-- navigasi -->
+    <nav class="navbar navbar-light" style="background-color: lightseagreen;"> <a class="navbar-brand">Likmi Stekom</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <!-- isi -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- menu/link -->
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="background-color: dimgrey;">
+                <ul class="nav flex-column"><h5 style="color:white; padding-top:5px;"><i class="fas fa-align-justify"></i> Info Kampus</h5>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" data-target="#tentang" data-toggle="modal"> <i class="fas fa-hotel" style="color: white;"></i> Tentang Lembaga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active"data-target="#biaya" data-toggle="modal"><i class="fas fa-money-check-alt" style="color: white;"></i> Biaya Pendidikan </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active"data-target="#Syarat" data-toggle="modal"> <i class="fas fa-clipboard-check"style="color: white;"></i> Syarat Pendaftaran </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- isi -->
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <form action="">
+                <div class="row" style="color: coral;"><div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-3"><h4>Data Siswa</h4> </div></div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Mohon isi sesuai dengan data di Kartu Keluarga</div>
+                </div>
+                <div class="row text-center my-2" style="background-color: coral;">
+                    <div class="col-6 py-2"> <b>DATA PRIBADI SISWA</b></div> <div class="col-6 py-2"><b>DATA ORANG TUA/WALI</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="text-align: right;">
+                      <p>Nama Lengkap</p> <br>
+                      <p>Tempat Lahir</p> <br>
+                      <p>Tanggal Lahir</p> <br>
+                      <p>Jenis Kelamin</p>
+                      <p>Agama</p> <br>
+                      <p>Alamat Rumah</p><br>
+                      <p>Kabupaten/Provinsi</p><br>
+                      <p>Pas Foto</p><br>
+                       <p>No. Handphone</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <p><input type="text" class="form-control" required><br><input type="text"class="form-control" required><br>
+                            <input type="date"class="form-control" required><br>
+                            <input type="checkbox"name="jeni" value="j">Laki-Laki <input type="checkbox" name="jenis"value="jt">Perempuan
+                            <br> <br>
+                            <select name="agama"id="inputTahun" class="form-control" required>
+                                <option>Islam</option>
+                                <option>Kristen</option>
+                                <option>Hindu</option>
+                            </select> <br><input type="text" class="form-control" required> <br><input type="text" class="form-control" required><br>
+                            <input type="file"  class="form-control" required> <br>
+                            <input type="number" class="form-control" required maxlength="12">
+                        </p>
+                    </div>
+                    <!-- data orang tua -->
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="text-align: right;">
+                     <p>Nama Ayah </p> <br>
+                     <p>Nama Ibu </p> <br>
+                     <p>Alamat Rumah </p> <br>
+                     <p>No. Handphone </p>
+                     <p>Penghasilan Rata-rata Perbulan </p> <br>
+                     <p>Nama Wali </p> <br>
+                     <p>Alamat Rumah </p><br>
+                     <p>No. Handphone </p>
+                     <p> Penghasilan Rata-rata Perbulan</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><p><input type="text" class="form-control required"><br>
+                        <input type="text"class="form-control" required> <br><input type="text"class="form-control" required> <br>
+                        <input type="number" class="form-control" required><br>
+                        <select name="penghasilan"id="inputTahun" class="form-control" required>
+                         <option>Rp. 500.000 - Rp. 1.000.000</option>
+                         <option>Rp. 1.000.000 - Rp. 2.000.000</option>
+                         <option>Rp. 2.000.000 - Keatas</option>
+                        </select> <br>
+                        <input type="text" class="form-control"> <br>
+                        <input type="text" class="form-control"> <br>
+                        <input type="text"  class="form-control" > <br>
+                        <select  name="penghasilan"id="inputTahun" class="form-control">
+                         <option>Rp. 500.000 - Rp. 1.000.000</option>
+                         <option>Rp. 1.000.000 - Rp. 2.000.000</option>
+                         <option>Rp. 2.000.000 - Keatas</option>
+                        </select></p> 
+                    </div>
+                </div>
+                <div class="row text-center my-2" style="background-color: coral;"><div class="col-6 py-2" ><b>DATA ASAL SEKOLAH</b></div>
+                    <div class="col-6 py-2"><b>PILIHAN JURUSAN</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="text-align: right;">
+                     <p>Nama Sekolah </p> <br>
+                     <p>Alamat Sekolah </p> <br>
+                     <p>No. Telpon Sekolah </p> <br>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"> <p><input type="text" class="form-control" required> <br>
+                        <input type="text"class="form-control" required> <br><input type="number"class="form-control" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="radio" name="jurusan" value="jm" >Manajemen Informatika <br>
+                        <input type="radio" name="jurusan" value="jt">Teknik Informatika<br>
+                            Alasan Memilih : <textarea name="alasan" required class="form-control" required></textarea>
+                            <hr><br>
+                           <span style="text-align: center;">
+                            <input type="checkbox" required>
+                                Saya setuju dan menyatakan bahwa data yang dimasukkan adalah benar dan dapat dipertanggung jawabkan. <br>
+                            <p> <input type="submit" value="Kirim"> <input type="reset" value="Batal"></p>
+                           </span> 
+                    </div>
+                </div>
+             </form>
+            </div>    
+        </div>
+    </div>
+    <!-- foother -->
+    <div class="container-fluid" style="background-color: black; color: white;">
+        <div class="row">
+          <div class="col-3">LKP STEKOM SENGKANG</div>
+          <div class="col-3">kode Pos: <br> 90914</div>
+          <div class="col-3"><a href="#"><img src="../tgs_kelompok/icon/telephone65.png" alt=> (0485) 22425</a><br>
+            <a href="https://www.email.com"><img src="../tgs_kelompok/icon/envelope4.png" alt=> likmi.stekom@gmail.com </a></div>
+          <div class="col-3">Kampus: Jln. Mesjid Raya No. 56 <br> Telp. 045-22425 <br> Sengkang Kab. Wajo</div>
+        </div>
+    </div>
+      <!-- data target -->
+        <div class="modal fade" id="Syarat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Syarat Pendaftaran</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <ul type="disc">
+                                    <li> Lulusan SMU/sederajat semua jurusan</li>
+                                    <li>Foto Copy Ijazah/ STTB dilegalisir 2 lembar (Bagi yang belum dapat ijaza, bisa menggunakan SKHU)</li>
+                                    <li>Mengisi formulir pendaftaran</li>
+                                    <li>Biaya Pendaftaran Rp. 100.0000,-</li>
+                                    <li>Potongan 50% dari biaya pendaftaran Bagi calon pendaftar yang berpartisipasi (Rangking 1, 2, 3)</li>
+                                    <li>Potongan 50% dari biaya pendaftaran untuk 21 orang pendaftr di Gelombang pertama</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- biaya pendaftaran -->
+        <div class="modal fade" id="biaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Biaya Pendidikan</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <p> <b> Biaya Semester I</b></p>
+                                <p>Modul 1 .................................................................................Rp. 350.000,-</p>
+                                <p>Modul 2 .................................................................................Rp. 350.000,-</p>
+                                <p> <b> Biaya Semester II</b></p>
+                                <p>Modul 1 .................................................................................Rp. 350.000,-</p>
+                                <p>Modul 2 .................................................................................Rp. 350.000,-</p>
+                                <p> <b> Biaya Semester III</b></p>
+                                <p>Modul 1 .................................................................................Rp. 350.000,-</p>
+                                <p>Modul 2 .................................................................................Rp. 350.000,-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- tentang lembaga -->
+        <div class="modal fade" id="tentang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tentang Lembaga</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                LIKMI, Lembaga Ilmu Komputer Manajemen merupakan lembaga yang berorintasi dalam mendidik tenaga-tenaga terampil yang siap kerja dan menghasilkan lulusan yang benar-benar mampu bersaing di era Teknologi Informasi & Komunikasi dapat bekerja di berbagai profesi komputer seperti teknisi, programer, web design, desain grapic, pranata komputer, administrasi perkantoran, instruktur komputer dan membangun pribadi yang memiliki moral yang bertanggungjawab dan dapat berkarya untuk menjadi lebih baik
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- js -->
+    <script src="js/jquery-3.3.1.js"></script> 
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+        once: true,
+       duration: 900,
+        });
+        $(document).ready(function () {
+        $("a").on('click', function (event) {
+
+           if (this.hash !== "") {
+               event.preventDefault();
+
+               var hash = this.hash;
+               $('html, body').animate({
+                   scrollTop: $(hash).offset().top
+               }, 900, function () {
+                   window.location.hash = hash;
+               });
+           }
+        });
+        });
+    </script>
+</body>
+</html>    

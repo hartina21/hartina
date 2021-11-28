@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="CSS/aos.css">
+    <title>Pendaftaran_Kursus Lkp_Stekom</title>
+    <style>
+      .card{
+        background-repeat: no-repeat;
+        background-image: url(img/pink\ kunig\ putih.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 1050px;
+      }
+    </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-header">LKP Stekom <span style="color: lightseagreen;"> <b> PENDAFTARAN KURSUS</b></span></div>
+      <div class="container" style="background-color: white;border-radius: 10px;">
+          <div class="row justify-conten-center text-center py-3">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><img src="img/bebann.jpg" alt="" class="img-fluid"></div>
+          </div>
+        <div class="row">
+          <div class="col-4" style="text-align: left;">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link active" data-target="#panduan" data-toggle="modal">
+                <h5>Panduan Pendaftaran</h5></a>  <span style="padding-left: 15px;"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4" style="text-align: center;">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link active" data-target="#tentang" data-toggle="modal">
+                <h5>Paket Pilihan</h5></a> 
+              </li>
+            </ul>
+          </div>
+          <div class="col-4" style="text-align: right;">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link active" data-target="#biaya" data-toggle="modal">
+                <h5>Biaya Kursus</h5></a> </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      
+      <h4 class="alert-heading" style="color: lightseagreen; padding-left: 23px;"><i class="fas fa-user fa-2x"></i>Data Siswa</h4>
+      <div class="card-body">
+        <form action="">
+        <div class="alert alert-success" role="alert">
+          <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-7">Nama Lengkap <input type="text"class="form-control" required></div>
+                    <div class="col-5">Jenis Kelamin <select name="jenis kelamin" id=""class="form-control" required><br>
+                      <option value=""> Laki-laki</option>
+                      <option value="" >Perempuan</option></select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">Tempat Lahir <input type="text"class="form-control" required></div>
+                    <div class="col-4">Tanggal Lahir <input type="date" class="form-control" required></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">Agama 
+                      <select name="agama"id="inputTahun" class="form-control" required>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Hindu</option>
+                      </select>
+                    </div>
+                    <div class="col-6">Pas Foto<input type="file" class="form-control" required></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">Alamat<input type="text"class="form-control" required></div>
+                  </div>
+                <div class="row">
+                  <div class="col-5">Paket Pilihan 
+                    <select id="inputTahun" class="form-control" required>
+                      <option>Perkantoran</option>
+                      <option>Komputer Teknik</option>
+                      <option>Aplikasi interNet</option>
+                      <option>Komputer Grafis</option>
+                    </select>
+                  </div>
+                  <div class="col-7">Jadwal
+                    <select id="inputTahun" class="form-control" required>
+                      <option>Pagi</option>
+                      <option>Sore</option>
+                      <option>Malam</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">No Hanndphone<input type="number" maxlength="12" class="form-control" required></div>
+                </div>
+                  <div class="row"><div class="col-12">Alamat Email<input type="email"class="form-control" required></div></div>
+          </div>
+          <div class="row">
+            <div class="col-12"style="text-align: center;"><input type="checkbox" required> Saya setuju dan menyatakan bahwa data yang dimasukkan adalah benar dan dapat dipertanggung jawabkan.</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 offset-3">
+            <input type="submit" name="Kirim" value="Kirim" class="btn btn-primary btn-block mt-4" style="border-radius: 10px;">
+          </div>
+          <div class="col-3"><input type="reset" name="Batal" value="Batal" class="btn btn-primary btn-block mt-4" style="border-radius: 10px;"></div>
+        </div>
+      </div>
+      
+    </form>
+      </div>
+  </div>
+  <!-- isi link modal -->
+    <div class="modal fade" id="panduan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">panduna Pendaftaran</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+             
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <ul>
+                    <li>Lengkapi formulir pendaftaran sesuai dengan KTP/KK</li>
+                    <li>Pilih paket Kursus atau jurusan yang anda ingin didaftar</li>
+                    <li>Ceklis jika identitas yang anda masukkan sudah Benar</li>
+                    <li>Silahkan buka link untuk info lanjut mengenai paket pilihan</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- biaya pendaftaran -->
+    <div class="modal fade" id="biaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Biaya Pendidikan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <p> <b> Perkantoran</b></p>
+                            <p>20 X Pertemuan ...............................................................<b> Rp. 350.000,-</b></p>
+                            <p> <b> Komputer Grafik</b></p>
+                            <p>15 X Pertemuan ...............................................................<b> Rp. 350.000,-</b></p>
+                            <p> <b>Komputer Teknik </b></p>
+                            <p>10 X Pertemuan ...............................................................<b> Rp. 350.000,-</b></p>
+                            <p> <b> Apliksi Internet</b></p>
+                            <p>7 X Pertemuan ...............................................................<b> Rp. 350.000,-</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <!-- tentang lembaga -->
+    <div class="modal fade" id="tentang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Paket Pilihan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <ul>
+                                <li><b>Perkantoran</b></li> 
+                                (Windows 7 / 10 + Office 2012)
+                                <li><b>Komputer Grafik</b></li> 
+                                (Corel Draw/Photoshop)
+                                <li><b>Komputer Teknik</b></li> 
+                                (Asembling+Instal Hard & Soft)
+                                <li><b>Aplikasi InterNet</b></li> 
+                                (Browsing+Email+Chat)
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-3.3.1.js"></script> 
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+        once: true,
+       duration: 900,
+        });
+        $(document).ready(function () {
+        $("a").on('click', function (event) {
+
+           if (this.hash !== "") {
+               event.preventDefault();
+
+               var hash = this.hash;
+               $('html, body').animate({
+                   scrollTop: $(hash).offset().top
+               }, 900, function () {
+                   window.location.hash = hash;
+               });
+           }
+        });
+        });
+    </script>
+</body>
+</html>    

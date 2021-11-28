@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="CSS/aos.css">
+    <title>Pendaftaran_Stekom 2021/2022</title>
+    <style>
+        .jumbotron{
+            background-repeat: no-repeat;
+            background-image: url(img/img1.jpeg);
+            background-size: cover;
+            background-position: center center;
+            height: 450px;
+        }
+        .jumbotron2{
+            background-repeat: no-repeat;
+            background-image: url(img/img9.jpeg);
+            background-size: cover;
+            background-position: center center;
+            height: 190px;
+        }
+        .card{
+          background: rgb(0, 0, 0, 0.2);
+        }
+        hr{
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron" id="HOME">
+        <!-- link navigasi -->
+     <ul class="nav justify-content-center" style="color: white; font-weight: bold; margin-top: -60px;">
+            <li class="nav-item">
+              <a class="nav-link active" href="bisa_yok.html">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kuliah.html" target="_blank">DAFTAR KULIAH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kursus.html" target="_blank">DAFTAR KURSUS</a>
+            </li>
+     </ul>    
+        <!-- login card dalam jumbotron-->
+        <div class="row mt-5">
+            <div class="col-4 offset-4 col- sm-4 offset-4 col-md-4 offset-4 col- lg-4 offset-4 col-4-xl offset-4">
+                <div class="card text-center" style="color: white;">
+                    <div class="card-header">
+                        <div class="row justify-content-center" style="margin-top:-50px;"><div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><img src="img/ini.jpg" alt="" class="rounded-circle w-75" data-aos="flip-left"></div></div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-aos="zoom-out"><h4>Please <span style="color:aqua">Login</span> </h4></div>
+                        </div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="input-group" data-aos="fade-right">
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text" style="background-color:aquamarine;" id="basic-addon1"><i class="fas fa-user"></i></span></div><input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required >
+                                </div>
+                                <br>
+                                <div class="input-group" data-aos="fade-left">
+                                    <div class="input-group-prepend"><span class="input-group-text" style="background-color:aquamarine;" id="basic-addon1"><i class="fas fa-lock"></i></span></div>
+                                    <input type="password" class="form-control" placeholder="Isi dengan 6 digit" aria-label="password" aria-describedby="basic-addon1" min="0"maxlength="6" required >
+                                </div>
+                                <div class="row pt-3" data-aos="fade-up">
+                                    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">Remeber me</label>
+                                    </div>
+                                    </div>
+                                    <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7" style="font-style: italic;">Forger your password?</div>
+                                </div>
+                                <hr data-aos="fade-up">
+                                <input type="submit" name="Login" value="Login" class="btn btn-primary btn-block mt-4" style="border-radius: 10px;" data-aos="fade-down">
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <!-- bagian info contak & google maps -->
+    <div class="container-fluid bg-light" style="margin-top: -25px;">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 py-3 px-5">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h4 data-aos="fade-left">Contact Us</h4>
+                        <p data-aos="fade-up"> Silahkan hubungi kami terkait syarat pendaftaran dan biaya dan ketentuan lainnya, apabila ada    yang kurang dipahami!</p>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-out"
+                                data-aos="flip-right"><i class="fas fa-map-marker-alt fa-2x" style="color: lightseagreen;" ></i> <h5>Address</h5><p>Jln. Mesjid Raya<br>Sengkang-wajo</p>
+                            </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-out"><i class="fas fa-clock fa-2x" style="color: lightseagreen;"></i><h5>OPPENING HOURS</h5><p>Senin-Kamis 09.00-18.00<br>Sabtu 09.00-15.00<br>Jum'at & Minggu:-</p>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-out"
+                                data-aos="flip-right"><i class="fas fa-envelope fa-2x" style="color: lightseagreen;" ></i><h5>EMAIL</h5><p>lokmi.stekom@gmail.com</p>
+                            </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-out"><i class="fas fa-phone fa-2x" style="color: lightseagreen;"></i><h5>PHONE</h5><p>(0485) 22425</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-out">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.4092669512556!2d120.02934361429237!3d-4.139626446559693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95e6fab222ebcd%3A0x3543e36a5ae07d7!2sSTEKOM%20Wajo!5e0!3m2!1sid!2sid!4v1633350789962!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- jumbotron2 -->
+    <div class="jumbotron2 text-center">
+        <p class="lead py-2"><h4>Selamat Bergabung Di Likmi Stekom! Silahkan Hubungi kami</h4></p>
+        <p>Daftarkan diri mu bersama kami, kita dituntut hidup berdampingan dengan Teknologi <br> kuasai dunia cukup mudah dengan Teknologi Sekarang juga !</p>
+        <h4> <button style="background: black; color: white; border-radius: 15px;"><a class="nav-link" href="#HOME">BACK TO TOP</a></button></h4>
+    </div>
+    <!-- js -->
+    <script src="js/jquery-3.3.1.js"></script> 
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+        once: true,
+       duration: 900,
+        });
+        $(document).ready(function () {
+        $("a").on('click', function (event) {
+
+           if (this.hash !== "") {
+               event.preventDefault();
+
+               var hash = this.hash;
+               $('html, body').animate({
+                   scrollTop: $(hash).offset().top
+               }, 900, function () {
+                   window.location.hash = hash;
+               });
+           }
+        });
+        });
+    </script>
+</body>
+</html>    
